@@ -11,7 +11,7 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('firmwarewebapp').";AccountKey=".getenv('jNiYysXeOj68J4LHGao72TamPyXTuu01F0gdbLEkZYanTNUgIsgDHi05mTQJWoHhTJ3v/+T9Mg0JfirjiNIg/Q==');
+$connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUNT_NAME').";AccountKey=".getenv('ACCOUNT_KEY');
 $containerName = "mycontainer";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
