@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL); 
 ini_set('display_errors', 1);
+echo base64_decode(base64_encode('test'));
 
 require_once 'vendor/autoload.php';
 require_once "./random_string.php";
